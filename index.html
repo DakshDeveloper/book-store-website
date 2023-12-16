@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DG & Co. | Books for All</title>
+</head>
+<body>
+    <header>
+        <input type="checkbox" id="menu-toggle-checkbox">
+        <label class="navbar" for="menu-toggle-checkbox">
+            <a href="#"><img src="logo.png" style="width:60px; height:60px; margin-left: 4vw;"></a>
+            <h1>DG & Co. Books</h1>
+            <div class="menu-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#intropage">Home</a></li> <!--Intro Section-->
+                <li><a href="#bestsellers">Best-Sellers</a></li>
+                <li><a href="#recommendations">Recommendations</a></li>
+                <li><a href="#reviews">Reviews</a></li>
+            </ul>
+        </label>
+    </header>
+    <div class="content">
+        <section id="intropage">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <div class="intropage">
+                <div class="img-intropage">
+                    <img src="cover.png">
+                </div>
+                <div class="text-intropage">
+                    <h1>DG & Co.</h1>
+                    <h3>Your Own Bookshop</h3>
+                    <p>Get almost all the latest collections, volumes of famous, infamous or newbie writers, curated by us just for you! Know the better part? They're surprisingly cheap to own! Check out our best-selling books right now!</p>
+                    <br>
+                    <a href="#bestsellers"><button><b>Best-Sellers</b></button></a>
+                </div>
+            </div>
+        </section>
+        <section id="bestsellers"></section>
+            <br>
+            <br>
+            <br>
+            <hr>
+            <div class="bestsellers">
+                <h1>Best Sellers for the Week</h1>
+                <h3>You might wanna try them!</h3>
+                <div class="cards">
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-1.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>The Road</h1>
+                        <h3>By Cormac McCarthy</h3>
+                        <p>INR <span style="text-decoration: line-through;">240</span>  199/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <input type="checkbox" id="modalToggle" class="modal-toggle">
+                            <div class="modal">
+                                <div class="modal-content">
+                                    <label for="modalToggle" class="close">&times;</label>
+                                    <h3>The Road</h3>
+                                    <p>The story is a post-apocalyptic tale depicting the trek of a father and son down a road fraught with danger. They follow a road ravaged by an unnamed catastrophe, heading south in hopes of finding...</p>
+                                    <button>Buy Now</button>
+                                </div>
+                            </div>
+                            <label for="modalToggle" class="know-more">Know More</label>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-2.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>And Then There...</h1>
+                        <h3>By Agatha Christie</h3>
+                        <p>INR <span style="text-decoration: line-through;">220</span>  149/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-3.jpg">
+                            <span class="non-fiction">NF</span>
+                        </div>
+                        <h1>Lemon</h1>
+                        <h3>By Kwon Yeo-sun</h3>
+                        <p>INR <span style="text-decoration: line-through;">280</span>  219/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-4.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>The Catcher in...</h1>
+                        <h3>By J.D. Salinger</h3>
+                        <p>INR <span style="text-decoration: line-through;">299</span>  209/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="recommendations">
+            <br>
+            <br>
+            <br>
+            <hr>
+            <div class="recommendations">
+                <h1>Recommended For You</h1>
+                <h3>Suggested based on your recent activity and preferences</h3>
+                <center>
+                    <div class="search">
+                        <input type="text" placeholder="Search Authors/Publishers/Titles/Volumes">
+                        <button>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="11" cy="11" r="8"></circle>
+                                <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+                            </svg>
+                        </button>
+                    </div>
+                </center>
+                <div class="cards">
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-5.jpg">
+                            <span class="non-fiction">NF</span>
+                        </div>
+                        <h1>Doglapan</h1>
+                        <h3>By Ashneer Grover</h3>
+                        <p>INR <span style="text-decoration: line-through;">240</span>  199/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-6.jpg">
+                            <span class="non-fiction">NF</span>
+                        </div>
+                        <h1>Wise and Otherw...</h1>
+                        <h3>By Sudha Murthy</h3>
+                        <p>INR <span style="text-decoration: line-through;">220</span>  149/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-7.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>War of Lanka</h1>
+                        <h3>By Amish Tripathi</h3>
+                        <p>INR <span style="text-decoration: line-through;">280</span>  219/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-8.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>The Adventures ...</h1>
+                        <h3>By Sir Arthur Conan Doyle</h3>
+                        <p>INR <span style="text-decoration: line-through;">299</span>  209/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-9.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>The Harry Potter...</h1>
+                        <h3>By J.K. Rowling</h3>
+                        <p>INR <span style="text-decoration: line-through;">240</span>  199/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-10.jpg">
+                            <span class="fiction">F</span>
+                        </div>
+                        <h1>The Murder of...</h1>
+                        <h3>By Agatha Christie</h3>
+                        <p>INR <span style="text-decoration: line-through;">220</span>  149/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-11.jpg">
+                            <span class="non-fiction">NF</span>
+                        </div>
+                        <h1>A Day in the...</h1>
+                        <h3>By Nathan Thrall</h3>
+                        <p>INR <span style="text-decoration: line-through;">280</span>  219/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                    <div class="book-card">
+                        <div class="card-img-container">
+                            <img src="img-12.jpg">
+                            <span class="non-fiction">NF</span>
+                        </div>
+                        <h1>How to Control...</h1>
+                        <h3>By Sandeep Maheshwari</h3>
+                        <p>INR <span style="text-decoration: line-through;">299</span>  209/-</p>
+                        <div class="card-buttons">
+                            <div class="add-button">
+                                <button class="add-to-cart" onclick="this.classList.toggle('clicked')">ADD+</button>
+                            </div>
+                            <button>Know More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="reviews">
+            <br>
+            <br>
+            <br>
+            <hr>
+            <div class="reviews">
+                <h1>Our Reviews</h1>
+                <h3>What people feel about us?</h3>
+                <div class="existing-reviews">
+                    <div class="review-card">
+                        <div class="sect-1">
+                            <img class ="avatar" src="review-avatar.png">
+                            <div class="reviewer-info">
+                                <h3>Daksh Gupta</h3>
+                                <img class="rating-img" src="rating-5.png">
+                            </div>
+                        </div>
+                        <div class="sect-2"><p>The delivery is super quick and the book variety is very huge... Love it! Also the all-time sales are very hot!</p></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="sect-1">
+                            <img class ="avatar" src="review-avatar.png">
+                            <div class="reviewer-info">
+                                <h3>Abraham Lincoln</h3>
+                                <img class="rating-img" src="rating-3.png">
+                            </div>
+                        </div>
+                        <div class="sect-2"><p>The variety of books impresses me but the guys are not supportive enough with the services... Would praise the pricing.</p></div>
+                    </div>
+                    <div class="review-card">
+                        <div class="sect-1">
+                            <img class ="avatar" src="review-avatar.png">
+                            <div class="reviewer-info">
+                                <h3>Albert Einstein</h3>
+                                <img class="rating-img" src="rating-4.png">
+                            </div>
+                        </div>
+                        <div class="sect-2"><p>The discounts are no scam and real! Love how the books are available at a cheaper rate and get delievered so quickly!</p></div>
+                    </div>
+                </div>
+                <br>
+                <br>
+                <p style="font-size: 25px;">Please take some time out to fill your reviews, it helps us grow and serve you better!</p>
+                <div class="review-form">
+                    <div class="row-1">
+                        <div class="enter-name">
+                            <p>Full Name: </p>
+                            <input type="text" placeholder="Enter Your Name Here">
+                        </div>
+                        <div class="enter-email">
+                            <p>e-mail: </p>
+                            <input type="text" placeholder="Enter Your E-mail Here">
+                        </div>
+                    </div>
+                    <div class="row-2">
+                        <div class="rating-of-5">
+                            <p>How satisfied are you?</p>
+                            <img src="rating-0.png">
+                        </div>
+                        <div class="review">
+                            <p>Please type your review here:</p>
+                            <input type="textarea" placeholder="Your Review Here">
+                        </div>
+                    </div>
+                    <div class="row-3">
+                        <center><button>Submit</button></center>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+    </div>
+    <img class="white-bg" src="white-bg.png">
+    <footer class="footer">
+        <p>Follow us on:</p>
+        <a href="https://www.facebook.com/profile.php?id=100095336748583"><img src="fb-logo.png"></a>
+        <a href="https://twitter.com/dakshgupta_2610"><img src="twitter-logo.png"></a>
+        <a href="https://www.linkedin.com/in/daksh-gupta-029a44293/"><img src="linkedin-logo.png"></a>
+        <a href="#" target="_blank"><p>Privacy Policy</p></a>
+        <a href="#" target="_blank"><p>Copyright</p></a>
+        <a href="#"><img class="up-scroll" src="up-arrow.png"></a>
+    </footer>
+</body>
+</html>
